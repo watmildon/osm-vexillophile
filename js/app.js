@@ -3,12 +3,9 @@
 
   let allRegions = [];
 
-  // Convert ISO alpha-2 code to flag emoji (e.g., "us" → 🇺🇸)
+  // Return an <img> tag for the bundled flag SVG
   function codeToFlag(code) {
-    const upper = code.toUpperCase();
-    return String.fromCodePoint(
-      ...upper.split("").map((c) => 0x1f1e6 + c.charCodeAt(0) - 65)
-    );
+    return `<img src="flags/${code.toLowerCase()}.svg" alt="${code.toUpperCase()}" class="flag-img">`;
   }
 
   // Build editor URLs for a given lat/lon/zoom

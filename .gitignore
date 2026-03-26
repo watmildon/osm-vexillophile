@@ -1,0 +1,26 @@
+# AI/LLM artifacts
+.claude/
+.cursor/
+.copilot/
+.aider*
+.codeium/
+.continue/
+.tabby/
+.supermaven/
+*.aider.md
+.env.local
+
+# Claude Code plans
+plans/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node (in case of local dev servers)
+node_modules/

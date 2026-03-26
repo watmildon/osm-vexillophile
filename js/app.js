@@ -116,6 +116,25 @@
       });
   });
 
+  // Theme toggle
+  const THEME_KEY = "flagcollector-theme";
+  function getSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  }
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    document.body.setAttribute("data-theme", theme);
+  }
+  let currentTheme = localStorage.getItem(THEME_KEY) || getSystemTheme();
+  applyTheme(currentTheme);
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    currentTheme = currentTheme === "dark" ? "light" : "dark";
+    applyTheme(currentTheme);
+    localStorage.setItem(THEME_KEY, currentTheme);
+  });
+
   const STORAGE_KEY = "flagcollector-hdyc-data";
 
   function saveAndRender(text) {

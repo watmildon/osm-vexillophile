@@ -32,6 +32,56 @@ header a {
   color: #0366d6;
 }
 
+/* Getting started steps */
+#steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: #0366d6;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.step h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.step p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.step a {
+  color: #0366d6;
+}
+
+@media (max-width: 600px) {
+  #steps {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Input section */
 #input-section {
   margin-bottom: 2rem;
@@ -60,6 +110,12 @@ header a {
   outline: none;
 }
 
+#input-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
 #parse-btn {
   display: inline-block;
   padding: 0.6rem 1.5rem;
@@ -73,6 +129,21 @@ header a {
 
 #parse-btn:hover {
   background: #0255b3;
+}
+
+#clear-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: #e1e4e8;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#clear-btn:hover {
+  background: #d1d5da;
 }
 
 /* Results */
@@ -205,6 +276,14 @@ details summary h2 span {
 
 .editor-link:hover {
   opacity: 0.85;
+}
+
+.editor-link.josm-ok {
+  background: #28a745;
+}
+
+.editor-link.josm-err {
+  background: #d73a49;
 }
 
 /* Collected cards are simpler */

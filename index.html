@@ -9,17 +9,38 @@
 <body>
   <header>
     <h1>Flag Collector OSM</h1>
-    <p>Find missing countries from your <a href="https://hdyc.neis-one.org/" target="_blank" rel="noopener">HDYC</a> profile and start mapping!</p>
   </header>
 
+  <section id="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Find your profile</h3>
+      <p>Go to <a href="https://hdyc.neis-one.org/" target="_blank" rel="noopener">hdyc.neis-one.org</a> and enter your OSM username</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Copy your flags</h3>
+      <p>Scroll to the flags section at the bottom and copy the region list</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Start collecting</h3>
+      <p>Paste below, find missing regions, and open an editor to start mapping!</p>
+    </div>
+  </section>
+
   <main>
-    <section id="input-section">
-      <label for="hdyc-input">Paste your HDYC country/region data below:</label>
+    <details id="input-section" open>
+      <summary><h2>HDYC Data</h2></summary>
+      <label for="hdyc-input">Paste your HDYC region data below:</label>
       <textarea id="hdyc-input" placeholder="us United States - 3,354,284 (12,597)
 ro Romania - 39,938 (10)id Indonesia - 35,156 (168)
 ..."></textarea>
-      <button id="parse-btn">Find Missing Flags</button>
-    </section>
+      <div id="input-actions">
+        <button id="parse-btn">Find Missing Flags</button>
+        <button id="clear-btn" class="hidden">Clear Saved Data</button>
+      </div>
+    </details>
 
     <section id="results-section" class="hidden">
       <div id="summary"></div>

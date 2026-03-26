@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  let allCountries = [];
+  let allRegions = [];
 
   // Convert ISO alpha-2 code to flag emoji (e.g., "us" → 🇺🇸)
   function codeToFlag(code) {
@@ -11,16 +11,18 @@
     );
   }
 
-  // Build editor URLs for a given lat/lon
-  function editorLinks(lat, lon) {
-    const zoom = 12;
-    const delta = 0.05;
+  // Build editor URLs for a given lat/lon/zoom
+  function editorLinks(lat, lon, zoom, name) {
+    // Scale the JOSM bbox to match the zoom level
+    // zoom 12 ≈ 0.05°, each zoom step halves/doubles
+    const delta = 0.05 * Math.pow(2, 12 - zoom);
     return {
       id: `https://www.openstreetmap.org/edit?editor=id#map=${zoom}/${lat}/${lon}`,
       rapid: `https://rapideditor.org/edit#map=${zoom}/${lat}/${lon}`,
       josm:
         `http://localhost:8111/load_and_zoom?left=${lon - delta}` +
-        `&right=${lon + delta}&top=${lat + delta}&bottom=${lat - delta}`,
+        `&right=${lon + delta}&top=${lat + delta}&bottom=${lat - delta}` +
+        `&new_layer=true&layer_name=${encodeURIComponent(name)}&download_policy=never`,
     };
   }
 
@@ -29,8 +31,8 @@
   // Entries may be on the same line (no separator other than the next 2-letter code)
   function parseHdyc(text) {
     const codes = new Set();
-    // Match 2-letter codes that appear before a country name.
-    // The HDYC format is: <2-letter code> <Country Name> - <number> (<number>)
+    // Match 2-letter codes that appear before a region name.
+    // The HDYC format is: <2-letter code> <Region Name> - <number> (<number>)
     const regex = /\b([a-z]{2})\s+[A-ZÀ-Ž][a-zà-ž]/g;
     let match;
     while ((match = regex.exec(text)) !== null) {
@@ -49,17 +51,17 @@
     const collected = [];
     const missing = [];
 
-    for (const country of allCountries) {
-      if (collectedCodes.has(country.code)) {
-        collected.push(country);
+    for (const region of allRegions) {
+      if (collectedCodes.has(region.code)) {
+        collected.push(region);
       } else {
-        missing.push(country);
+        missing.push(region);
       }
     }
 
     // Summary
     summary.innerHTML =
-      `<span class="count-collected">${collected.length}</span> of ${allCountries.length} flags collected &mdash; ` +
+      `<span class="count-collected">${collected.length}</span> of ${allRegions.length} flags collected &mdash; ` +
       `<span class="count-missing">${missing.length}</span> remaining!`;
 
     // Section counts
@@ -80,15 +82,15 @@
     // Missing list (flags + names + editor links)
     missingList.innerHTML = missing
       .map((c) => {
-        const links = editorLinks(c.lat, c.lon);
+        const links = editorLinks(c.lat, c.lon, c.zoom || 12, c.name);
         return (
           `<div class="country-card">` +
           `<span class="flag">${codeToFlag(c.code)}</span>` +
           `<span class="name">${c.name}</span>` +
           `<span class="editors">` +
           `<a class="editor-link id" href="${links.id}" target="_blank" rel="noopener" title="Edit in iD">iD</a>` +
-          `<a class="editor-link rapid" href="${links.rapid}" target="_blank" rel="noopener" title="Edit in RapiD">RapiD</a>` +
-          `<a class="editor-link josm" href="${links.josm}" title="Open in JOSM (remote control)">JOSM</a>` +
+          `<a class="editor-link rapid" href="${links.rapid}" target="_blank" rel="noopener" title="Edit in Rapid">Rapid</a>` +
+          `<a class="editor-link josm" href="#" data-josm="${links.josm}" title="Open in JOSM (remote control)">JOSM</a>` +
           `</span>` +
           `</div>`
         );
@@ -98,17 +100,61 @@
     resultsSection.classList.remove("hidden");
   }
 
+  // Handle JOSM remote control links via background fetch
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("a[data-josm]");
+    if (!link) return;
+    e.preventDefault();
+    const url = link.dataset.josm;
+    link.classList.remove("josm-ok", "josm-err");
+    fetch(url)
+      .then(() => {
+        link.classList.add("josm-ok");
+      })
+      .catch(() => {
+        link.classList.add("josm-err");
+      });
+  });
+
+  const STORAGE_KEY = "flagcollector-hdyc-data";
+
+  function saveAndRender(text) {
+    const codes = parseHdyc(text);
+    if (codes.size === 0) return;
+    localStorage.setItem(STORAGE_KEY, text);
+    render(codes);
+    // Collapse input section and show clear button
+    document.getElementById("input-section").removeAttribute("open");
+    document.getElementById("clear-btn").classList.remove("hidden");
+  }
+
   // Init
   async function init() {
     const response = await fetch("data/countries.json");
-    allCountries = await response.json();
+    allRegions = await response.json();
+
+    const textarea = document.getElementById("hdyc-input");
 
     document.getElementById("parse-btn").addEventListener("click", () => {
-      const text = document.getElementById("hdyc-input").value.trim();
+      const text = textarea.value.trim();
       if (!text) return;
-      const codes = parseHdyc(text);
-      render(codes);
+      saveAndRender(text);
     });
+
+    document.getElementById("clear-btn").addEventListener("click", () => {
+      localStorage.removeItem(STORAGE_KEY);
+      textarea.value = "";
+      document.getElementById("results-section").classList.add("hidden");
+      document.getElementById("clear-btn").classList.add("hidden");
+      document.getElementById("input-section").setAttribute("open", "");
+    });
+
+    // Restore from localStorage on load
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      textarea.value = saved;
+      saveAndRender(saved);
+    }
   }
 
   init();

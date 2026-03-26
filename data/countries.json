@@ -3,1500 +3,1750 @@
     "code": "af",
     "name": "Afghanistan",
     "lat": 33,
-    "lon": 65
+    "lon": 65,
+    "zoom": 12
   },
   {
     "code": "ax",
     "name": "Åland Islands",
     "lat": 60.116667,
-    "lon": 19.9
+    "lon": 19.9,
+    "zoom": 14
   },
   {
     "code": "al",
     "name": "Albania",
     "lat": 41,
-    "lon": 20
+    "lon": 20,
+    "zoom": 12
   },
   {
     "code": "dz",
     "name": "Algeria",
     "lat": 28,
-    "lon": 3
+    "lon": 3,
+    "zoom": 12
   },
   {
     "code": "as",
     "name": "American Samoa",
     "lat": -14.28,
-    "lon": -170.7
+    "lon": -170.7,
+    "zoom": 14
   },
   {
     "code": "ad",
     "name": "Andorra",
     "lat": 42.5,
-    "lon": 1.5
+    "lon": 1.5,
+    "zoom": 14
   },
   {
     "code": "ao",
     "name": "Angola",
     "lat": -12.5,
-    "lon": 18.5
+    "lon": 18.5,
+    "zoom": 12
   },
   {
     "code": "ai",
     "name": "Anguilla",
     "lat": 18.22,
-    "lon": -63.05
+    "lon": -63.05,
+    "zoom": 14
   },
   {
     "code": "aq",
     "name": "Antarctica",
     "lat": -77.85,
-    "lon": 166.67
+    "lon": 166.67,
+    "zoom": 12
   },
   {
     "code": "ag",
     "name": "Antigua and Barbuda",
     "lat": 17.12,
-    "lon": -61.85
+    "lon": -61.85,
+    "zoom": 14
   },
   {
     "code": "ar",
     "name": "Argentina",
     "lat": -34,
-    "lon": -64
+    "lon": -64,
+    "zoom": 12
   },
   {
     "code": "am",
     "name": "Armenia",
     "lat": 40,
-    "lon": 45
+    "lon": 45,
+    "zoom": 12
   },
   {
     "code": "aw",
     "name": "Aruba",
     "lat": 12.51,
-    "lon": -70.03
+    "lon": -70.03,
+    "zoom": 14
   },
   {
     "code": "au",
     "name": "Australia",
     "lat": -27,
-    "lon": 133
+    "lon": 133,
+    "zoom": 12
   },
   {
     "code": "at",
     "name": "Austria",
     "lat": 47.33333333,
-    "lon": 13.33333333
+    "lon": 13.33333333,
+    "zoom": 12
   },
   {
     "code": "az",
     "name": "Azerbaijan",
     "lat": 40.5,
-    "lon": 47.5
+    "lon": 47.5,
+    "zoom": 12
   },
   {
     "code": "bs",
     "name": "Bahamas",
     "lat": 25.06,
-    "lon": -77.34
+    "lon": -77.34,
+    "zoom": 12
   },
   {
     "code": "bh",
     "name": "Bahrain",
     "lat": 26,
-    "lon": 50.55
+    "lon": 50.55,
+    "zoom": 14
   },
   {
     "code": "bd",
     "name": "Bangladesh",
     "lat": 24,
-    "lon": 90
+    "lon": 90,
+    "zoom": 12
   },
   {
     "code": "bb",
     "name": "Barbados",
     "lat": 13.16666666,
-    "lon": -59.53333333
+    "lon": -59.53333333,
+    "zoom": 14
   },
   {
     "code": "by",
     "name": "Belarus",
     "lat": 53,
-    "lon": 28
+    "lon": 28,
+    "zoom": 12
   },
   {
     "code": "be",
     "name": "Belgium",
     "lat": 50.83333333,
-    "lon": 4
+    "lon": 4,
+    "zoom": 12
   },
   {
     "code": "bz",
     "name": "Belize",
     "lat": 17.25,
-    "lon": -88.75
+    "lon": -88.75,
+    "zoom": 12
   },
   {
     "code": "bj",
     "name": "Benin",
     "lat": 9.5,
-    "lon": 2.25
+    "lon": 2.25,
+    "zoom": 12
   },
   {
     "code": "bm",
     "name": "Bermuda",
     "lat": 32.29,
-    "lon": -64.78
+    "lon": -64.78,
+    "zoom": 14
   },
   {
     "code": "bt",
     "name": "Bhutan",
     "lat": 27.5,
-    "lon": 90.5
+    "lon": 90.5,
+    "zoom": 12
   },
   {
     "code": "bo",
     "name": "Bolivia",
     "lat": -17,
-    "lon": -65
+    "lon": -65,
+    "zoom": 12
   },
   {
     "code": "ba",
     "name": "Bosnia and Herzegovina",
     "lat": 44,
-    "lon": 18
+    "lon": 18,
+    "zoom": 12
   },
   {
     "code": "bw",
     "name": "Botswana",
     "lat": -22,
-    "lon": 24
+    "lon": 24,
+    "zoom": 12
   },
   {
     "code": "bv",
     "name": "Bouvet Island",
     "lat": -54.43,
-    "lon": 3.38
+    "lon": 3.38,
+    "zoom": 12
   },
   {
     "code": "br",
     "name": "Brazil",
     "lat": -10,
-    "lon": -55
+    "lon": -55,
+    "zoom": 12
   },
   {
     "code": "io",
     "name": "British Indian Ocean Territory",
     "lat": -7.32,
-    "lon": 72.42
+    "lon": 72.42,
+    "zoom": 12
   },
   {
     "code": "vg",
     "name": "British Virgin Islands",
     "lat": 18.43,
-    "lon": -64.62
+    "lon": -64.62,
+    "zoom": 14
   },
   {
     "code": "bn",
     "name": "Brunei",
     "lat": 4.5,
-    "lon": 114.66666666
+    "lon": 114.66666666,
+    "zoom": 13
   },
   {
     "code": "bg",
     "name": "Bulgaria",
     "lat": 43,
-    "lon": 25
+    "lon": 25,
+    "zoom": 12
   },
   {
     "code": "bf",
     "name": "Burkina Faso",
     "lat": 13,
-    "lon": -2
+    "lon": -2,
+    "zoom": 12
   },
   {
     "code": "bi",
     "name": "Burundi",
     "lat": -3.5,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   },
   {
     "code": "kh",
     "name": "Cambodia",
     "lat": 13,
-    "lon": 105
+    "lon": 105,
+    "zoom": 12
   },
   {
     "code": "cm",
     "name": "Cameroon",
     "lat": 6,
-    "lon": 12
+    "lon": 12,
+    "zoom": 12
   },
   {
     "code": "ca",
     "name": "Canada",
     "lat": 60,
-    "lon": -95
+    "lon": -95,
+    "zoom": 12
   },
   {
     "code": "cv",
     "name": "Cape Verde",
     "lat": 14.93,
-    "lon": -23.51
+    "lon": -23.51,
+    "zoom": 14
   },
   {
     "code": "bq",
     "name": "Caribbean Netherlands",
     "lat": 12.15,
-    "lon": -68.27
+    "lon": -68.27,
+    "zoom": 14
   },
   {
     "code": "ky",
     "name": "Cayman Islands",
     "lat": 19.29,
-    "lon": -81.38
+    "lon": -81.38,
+    "zoom": 14
   },
   {
     "code": "cf",
     "name": "Central African Republic",
     "lat": 7,
-    "lon": 21
+    "lon": 21,
+    "zoom": 12
   },
   {
     "code": "td",
     "name": "Chad",
     "lat": 15,
-    "lon": 19
+    "lon": 19,
+    "zoom": 12
   },
   {
     "code": "cl",
     "name": "Chile",
     "lat": -30,
-    "lon": -71
+    "lon": -71,
+    "zoom": 12
   },
   {
     "code": "cn",
     "name": "China",
     "lat": 35,
-    "lon": 105
+    "lon": 105,
+    "zoom": 12
   },
   {
     "code": "cx",
     "name": "Christmas Island",
     "lat": -10.42,
-    "lon": 105.68
+    "lon": 105.68,
+    "zoom": 14
   },
   {
     "code": "cc",
     "name": "Cocos (Keeling) Islands",
     "lat": -12.19,
-    "lon": 96.83
+    "lon": 96.83,
+    "zoom": 14
   },
   {
     "code": "co",
     "name": "Colombia",
     "lat": 4,
-    "lon": -72
+    "lon": -72,
+    "zoom": 12
   },
   {
     "code": "km",
     "name": "Comoros",
     "lat": -11.7,
-    "lon": 43.26
+    "lon": 43.26,
+    "zoom": 14
   },
   {
     "code": "cg",
     "name": "Congo",
     "lat": -1,
-    "lon": 15
+    "lon": 15,
+    "zoom": 12
   },
   {
     "code": "ck",
     "name": "Cook Islands",
     "lat": -21.21,
-    "lon": -159.78
+    "lon": -159.78,
+    "zoom": 14
   },
   {
     "code": "cr",
     "name": "Costa Rica",
     "lat": 10,
-    "lon": -84
+    "lon": -84,
+    "zoom": 12
   },
   {
     "code": "hr",
     "name": "Croatia",
     "lat": 45.16666666,
-    "lon": 15.5
+    "lon": 15.5,
+    "zoom": 12
   },
   {
     "code": "cu",
     "name": "Cuba",
     "lat": 21.5,
-    "lon": -80
+    "lon": -80,
+    "zoom": 12
   },
   {
     "code": "cw",
     "name": "Curaçao",
     "lat": 12.11,
-    "lon": -68.94
+    "lon": -68.94,
+    "zoom": 14
   },
   {
     "code": "cy",
     "name": "Cyprus",
     "lat": 35,
-    "lon": 33
+    "lon": 33,
+    "zoom": 13
   },
   {
     "code": "cz",
     "name": "Czechia",
     "lat": 49.75,
-    "lon": 15.5
+    "lon": 15.5,
+    "zoom": 12
   },
   {
     "code": "dk",
     "name": "Denmark",
     "lat": 56,
-    "lon": 10
+    "lon": 10,
+    "zoom": 12
   },
   {
     "code": "dj",
     "name": "Djibouti",
     "lat": 11.5,
-    "lon": 43
+    "lon": 43,
+    "zoom": 12
   },
   {
     "code": "dm",
     "name": "Dominica",
     "lat": 15.41666666,
-    "lon": -61.33333333
+    "lon": -61.33333333,
+    "zoom": 14
   },
   {
     "code": "do",
     "name": "Dominican Republic",
     "lat": 19,
-    "lon": -70.66666666
+    "lon": -70.66666666,
+    "zoom": 12
   },
   {
     "code": "cd",
     "name": "DR Congo",
     "lat": 0,
-    "lon": 25
+    "lon": 25,
+    "zoom": 12
   },
   {
     "code": "ec",
     "name": "Ecuador",
     "lat": -2,
-    "lon": -77.5
+    "lon": -77.5,
+    "zoom": 12
   },
   {
     "code": "eg",
     "name": "Egypt",
     "lat": 27,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   },
   {
     "code": "sv",
     "name": "El Salvador",
     "lat": 13.83333333,
-    "lon": -88.91666666
+    "lon": -88.91666666,
+    "zoom": 12
   },
   {
     "code": "gq",
     "name": "Equatorial Guinea",
     "lat": 2,
-    "lon": 10
+    "lon": 10,
+    "zoom": 12
   },
   {
     "code": "er",
     "name": "Eritrea",
     "lat": 15,
-    "lon": 39
+    "lon": 39,
+    "zoom": 12
   },
   {
     "code": "ee",
     "name": "Estonia",
     "lat": 59,
-    "lon": 26
+    "lon": 26,
+    "zoom": 12
   },
   {
     "code": "sz",
     "name": "Eswatini",
     "lat": -26.5,
-    "lon": 31.5
+    "lon": 31.5,
+    "zoom": 12
   },
   {
     "code": "et",
     "name": "Ethiopia",
     "lat": 8,
-    "lon": 38
+    "lon": 38,
+    "zoom": 12
   },
   {
     "code": "fk",
     "name": "Falkland Islands",
     "lat": -51.7,
-    "lon": -57.85
+    "lon": -57.85,
+    "zoom": 12
   },
   {
     "code": "fo",
     "name": "Faroe Islands",
     "lat": 62.01,
-    "lon": -6.77
+    "lon": -6.77,
+    "zoom": 14
   },
   {
     "code": "fj",
     "name": "Fiji",
     "lat": -17.77,
-    "lon": 177.95
+    "lon": 177.95,
+    "zoom": 12
   },
   {
     "code": "fi",
     "name": "Finland",
     "lat": 64,
-    "lon": 26
+    "lon": 26,
+    "zoom": 12
   },
   {
     "code": "fr",
     "name": "France",
     "lat": 46,
-    "lon": 2
+    "lon": 2,
+    "zoom": 12
   },
   {
     "code": "gf",
     "name": "French Guiana",
     "lat": 4,
-    "lon": -53
+    "lon": -53,
+    "zoom": 12
   },
   {
     "code": "pf",
     "name": "French Polynesia",
     "lat": -17.53,
-    "lon": -149.57
+    "lon": -149.57,
+    "zoom": 12
   },
   {
     "code": "tf",
     "name": "French Southern and Antarctic Lands",
     "lat": -49.35,
-    "lon": 70.22
+    "lon": 70.22,
+    "zoom": 12
   },
   {
     "code": "ga",
     "name": "Gabon",
     "lat": -1,
-    "lon": 11.75
+    "lon": 11.75,
+    "zoom": 12
   },
   {
     "code": "gm",
     "name": "Gambia",
     "lat": 13.46666666,
-    "lon": -16.56666666
+    "lon": -16.56666666,
+    "zoom": 13
   },
   {
     "code": "ge",
     "name": "Georgia",
     "lat": 42,
-    "lon": 43.5
+    "lon": 43.5,
+    "zoom": 12
   },
   {
     "code": "de",
     "name": "Germany",
     "lat": 51,
-    "lon": 9
+    "lon": 9,
+    "zoom": 12
   },
   {
     "code": "gh",
     "name": "Ghana",
     "lat": 8,
-    "lon": -2
+    "lon": -2,
+    "zoom": 12
   },
   {
     "code": "gi",
     "name": "Gibraltar",
     "lat": 36.13333333,
-    "lon": -5.35
+    "lon": -5.35,
+    "zoom": 16
   },
   {
     "code": "gr",
     "name": "Greece",
     "lat": 39,
-    "lon": 22
+    "lon": 22,
+    "zoom": 12
   },
   {
     "code": "gl",
     "name": "Greenland",
     "lat": 72,
-    "lon": -40
+    "lon": -40,
+    "zoom": 12
   },
   {
     "code": "gd",
     "name": "Grenada",
     "lat": 12.11666666,
-    "lon": -61.66666666
+    "lon": -61.66666666,
+    "zoom": 14
   },
   {
     "code": "gp",
     "name": "Guadeloupe",
     "lat": 16.24,
-    "lon": -61.54
+    "lon": -61.54,
+    "zoom": 12
   },
   {
     "code": "gu",
     "name": "Guam",
     "lat": 13.47,
-    "lon": 144.75
+    "lon": 144.75,
+    "zoom": 14
   },
   {
     "code": "gt",
     "name": "Guatemala",
     "lat": 15.5,
-    "lon": -90.25
+    "lon": -90.25,
+    "zoom": 12
   },
   {
     "code": "gg",
     "name": "Guernsey",
     "lat": 49.46666666,
-    "lon": -2.58333333
+    "lon": -2.58333333,
+    "zoom": 14
   },
   {
     "code": "gn",
     "name": "Guinea",
     "lat": 11,
-    "lon": -10
+    "lon": -10,
+    "zoom": 12
   },
   {
     "code": "gw",
     "name": "Guinea-Bissau",
     "lat": 12,
-    "lon": -15
+    "lon": -15,
+    "zoom": 12
   },
   {
     "code": "gy",
     "name": "Guyana",
     "lat": 5,
-    "lon": -59
+    "lon": -59,
+    "zoom": 12
   },
   {
     "code": "ht",
     "name": "Haiti",
     "lat": 19,
-    "lon": -72.41666666
+    "lon": -72.41666666,
+    "zoom": 12
   },
   {
     "code": "hm",
     "name": "Heard Island and McDonald Islands",
     "lat": -53.02,
-    "lon": 73.39
+    "lon": 73.39,
+    "zoom": 12
   },
   {
     "code": "hn",
     "name": "Honduras",
     "lat": 15,
-    "lon": -86.5
+    "lon": -86.5,
+    "zoom": 12
   },
   {
     "code": "hk",
     "name": "Hong Kong",
     "lat": 22.267,
-    "lon": 114.188
+    "lon": 114.188,
+    "zoom": 14
   },
   {
     "code": "hu",
     "name": "Hungary",
     "lat": 47,
-    "lon": 20
+    "lon": 20,
+    "zoom": 12
   },
   {
     "code": "is",
     "name": "Iceland",
     "lat": 65,
-    "lon": -18
+    "lon": -18,
+    "zoom": 12
   },
   {
     "code": "in",
     "name": "India",
     "lat": 20,
-    "lon": 77
+    "lon": 77,
+    "zoom": 12
   },
   {
     "code": "id",
     "name": "Indonesia",
     "lat": -6.21,
-    "lon": 106.85
+    "lon": 106.85,
+    "zoom": 12
   },
   {
     "code": "ir",
     "name": "Iran",
     "lat": 32,
-    "lon": 53
+    "lon": 53,
+    "zoom": 12
   },
   {
     "code": "iq",
     "name": "Iraq",
     "lat": 33,
-    "lon": 44
+    "lon": 44,
+    "zoom": 12
   },
   {
     "code": "ie",
     "name": "Ireland",
     "lat": 53,
-    "lon": -8
+    "lon": -8,
+    "zoom": 12
   },
   {
     "code": "im",
     "name": "Isle of Man",
     "lat": 54.25,
-    "lon": -4.5
+    "lon": -4.5,
+    "zoom": 14
   },
   {
     "code": "il",
     "name": "Israel",
     "lat": 31.47,
-    "lon": 35.13
+    "lon": 35.13,
+    "zoom": 12
   },
   {
     "code": "it",
     "name": "Italy",
     "lat": 42.83333333,
-    "lon": 12.83333333
+    "lon": 12.83333333,
+    "zoom": 12
   },
   {
     "code": "ci",
     "name": "Ivory Coast",
     "lat": 8,
-    "lon": -5
+    "lon": -5,
+    "zoom": 12
   },
   {
     "code": "jm",
     "name": "Jamaica",
     "lat": 18.25,
-    "lon": -77.5
+    "lon": -77.5,
+    "zoom": 13
   },
   {
     "code": "jp",
     "name": "Japan",
     "lat": 36,
-    "lon": 138
+    "lon": 138,
+    "zoom": 12
   },
   {
     "code": "je",
     "name": "Jersey",
     "lat": 49.25,
-    "lon": -2.16666666
+    "lon": -2.16666666,
+    "zoom": 14
   },
   {
     "code": "jo",
     "name": "Jordan",
     "lat": 31,
-    "lon": 36
+    "lon": 36,
+    "zoom": 12
   },
   {
     "code": "kz",
     "name": "Kazakhstan",
     "lat": 48,
-    "lon": 68
+    "lon": 68,
+    "zoom": 12
   },
   {
     "code": "ke",
     "name": "Kenya",
     "lat": 1,
-    "lon": 38
+    "lon": 38,
+    "zoom": 12
   },
   {
     "code": "ki",
     "name": "Kiribati",
     "lat": 1.45,
-    "lon": 173.02
+    "lon": 173.02,
+    "zoom": 14
   },
   {
     "code": "xk",
     "name": "Kosovo",
     "lat": 42.666667,
-    "lon": 21.166667
+    "lon": 21.166667,
+    "zoom": 12
   },
   {
     "code": "kw",
     "name": "Kuwait",
     "lat": 29.5,
-    "lon": 45.75
+    "lon": 45.75,
+    "zoom": 13
   },
   {
     "code": "kg",
     "name": "Kyrgyzstan",
     "lat": 41,
-    "lon": 75
+    "lon": 75,
+    "zoom": 12
   },
   {
     "code": "la",
     "name": "Laos",
     "lat": 18,
-    "lon": 105
+    "lon": 105,
+    "zoom": 12
   },
   {
     "code": "lv",
     "name": "Latvia",
     "lat": 57,
-    "lon": 25
+    "lon": 25,
+    "zoom": 12
   },
   {
     "code": "lb",
     "name": "Lebanon",
     "lat": 33.83333333,
-    "lon": 35.83333333
+    "lon": 35.83333333,
+    "zoom": 13
   },
   {
     "code": "ls",
     "name": "Lesotho",
     "lat": -29.5,
-    "lon": 28.5
+    "lon": 28.5,
+    "zoom": 12
   },
   {
     "code": "lr",
     "name": "Liberia",
     "lat": 6.5,
-    "lon": -9.5
+    "lon": -9.5,
+    "zoom": 12
   },
   {
     "code": "ly",
     "name": "Libya",
     "lat": 25,
-    "lon": 17
+    "lon": 17,
+    "zoom": 12
   },
   {
     "code": "li",
     "name": "Liechtenstein",
     "lat": 47.26666666,
-    "lon": 9.53333333
+    "lon": 9.53333333,
+    "zoom": 14
   },
   {
     "code": "lt",
     "name": "Lithuania",
     "lat": 56,
-    "lon": 24
+    "lon": 24,
+    "zoom": 12
   },
   {
     "code": "lu",
     "name": "Luxembourg",
     "lat": 49.75,
-    "lon": 6.16666666
+    "lon": 6.16666666,
+    "zoom": 13
   },
   {
     "code": "mo",
     "name": "Macau",
     "lat": 22.16666666,
-    "lon": 113.55
+    "lon": 113.55,
+    "zoom": 16
   },
   {
     "code": "mg",
     "name": "Madagascar",
     "lat": -20,
-    "lon": 47
+    "lon": 47,
+    "zoom": 12
   },
   {
     "code": "mw",
     "name": "Malawi",
     "lat": -13.5,
-    "lon": 34
+    "lon": 34,
+    "zoom": 12
   },
   {
     "code": "my",
     "name": "Malaysia",
     "lat": 3.14,
-    "lon": 101.69
+    "lon": 101.69,
+    "zoom": 12
   },
   {
     "code": "mv",
     "name": "Maldives",
     "lat": 4.175,
-    "lon": 73.51
+    "lon": 73.51,
+    "zoom": 14
   },
   {
     "code": "ml",
     "name": "Mali",
     "lat": 17,
-    "lon": -4
+    "lon": -4,
+    "zoom": 12
   },
   {
     "code": "mt",
     "name": "Malta",
     "lat": 35.83333333,
-    "lon": 14.58333333
+    "lon": 14.58333333,
+    "zoom": 14
   },
   {
     "code": "mh",
     "name": "Marshall Islands",
     "lat": 7.09,
-    "lon": 171.38
+    "lon": 171.38,
+    "zoom": 14
   },
   {
     "code": "mq",
     "name": "Martinique",
     "lat": 14.61,
-    "lon": -61.06
+    "lon": -61.06,
+    "zoom": 12
   },
   {
     "code": "mr",
     "name": "Mauritania",
     "lat": 20,
-    "lon": -12
+    "lon": -12,
+    "zoom": 12
   },
   {
     "code": "mu",
     "name": "Mauritius",
     "lat": -20.28333333,
-    "lon": 57.55
+    "lon": 57.55,
+    "zoom": 14
   },
   {
     "code": "yt",
     "name": "Mayotte",
     "lat": -12.78,
-    "lon": 45.23
+    "lon": 45.23,
+    "zoom": 12
   },
   {
     "code": "mx",
     "name": "Mexico",
     "lat": 23,
-    "lon": -102
+    "lon": -102,
+    "zoom": 12
   },
   {
     "code": "fm",
     "name": "Micronesia",
     "lat": 6.91,
-    "lon": 158.16
+    "lon": 158.16,
+    "zoom": 12
   },
   {
     "code": "md",
     "name": "Moldova",
     "lat": 47,
-    "lon": 29
+    "lon": 29,
+    "zoom": 12
   },
   {
     "code": "mc",
     "name": "Monaco",
     "lat": 43.73333333,
-    "lon": 7.4
+    "lon": 7.4,
+    "zoom": 16
   },
   {
     "code": "mn",
     "name": "Mongolia",
     "lat": 46,
-    "lon": 105
+    "lon": 105,
+    "zoom": 12
   },
   {
     "code": "me",
     "name": "Montenegro",
     "lat": 42.5,
-    "lon": 19.3
+    "lon": 19.3,
+    "zoom": 12
   },
   {
     "code": "ms",
     "name": "Montserrat",
     "lat": 16.79,
-    "lon": -62.21
+    "lon": -62.21,
+    "zoom": 14
   },
   {
     "code": "ma",
     "name": "Morocco",
     "lat": 32,
-    "lon": -5
+    "lon": -5,
+    "zoom": 12
   },
   {
     "code": "mz",
     "name": "Mozambique",
     "lat": -18.25,
-    "lon": 35
+    "lon": 35,
+    "zoom": 12
   },
   {
     "code": "mm",
     "name": "Myanmar",
     "lat": 22,
-    "lon": 98
+    "lon": 98,
+    "zoom": 12
   },
   {
     "code": "na",
     "name": "Namibia",
     "lat": -22,
-    "lon": 17
+    "lon": 17,
+    "zoom": 12
   },
   {
     "code": "nr",
     "name": "Nauru",
     "lat": -0.55,
-    "lon": 166.92
+    "lon": 166.92,
+    "zoom": 14
   },
   {
     "code": "np",
     "name": "Nepal",
     "lat": 28,
-    "lon": 84
+    "lon": 84,
+    "zoom": 12
   },
   {
     "code": "nl",
     "name": "Netherlands",
     "lat": 52.5,
-    "lon": 5.75
+    "lon": 5.75,
+    "zoom": 12
   },
   {
     "code": "nc",
     "name": "New Caledonia",
     "lat": -22.28,
-    "lon": 166.46
+    "lon": 166.46,
+    "zoom": 12
   },
   {
     "code": "nz",
     "name": "New Zealand",
     "lat": -41,
-    "lon": 174
+    "lon": 174,
+    "zoom": 12
   },
   {
     "code": "ni",
     "name": "Nicaragua",
     "lat": 13,
-    "lon": -85
+    "lon": -85,
+    "zoom": 12
   },
   {
     "code": "ne",
     "name": "Niger",
     "lat": 16,
-    "lon": 8
+    "lon": 8,
+    "zoom": 12
   },
   {
     "code": "ng",
     "name": "Nigeria",
     "lat": 10,
-    "lon": 8
+    "lon": 8,
+    "zoom": 12
   },
   {
     "code": "nu",
     "name": "Niue",
     "lat": -19.06,
-    "lon": -169.92
+    "lon": -169.92,
+    "zoom": 14
   },
   {
     "code": "nf",
     "name": "Norfolk Island",
     "lat": -29.05,
-    "lon": 167.96
+    "lon": 167.96,
+    "zoom": 14
   },
   {
     "code": "kp",
     "name": "North Korea",
     "lat": 40,
-    "lon": 127
+    "lon": 127,
+    "zoom": 12
   },
   {
     "code": "mk",
     "name": "North Macedonia",
     "lat": 41.83333333,
-    "lon": 22
+    "lon": 22,
+    "zoom": 12
   },
   {
     "code": "mp",
     "name": "Northern Mariana Islands",
     "lat": 15.18,
-    "lon": 145.75
+    "lon": 145.75,
+    "zoom": 14
   },
   {
     "code": "no",
     "name": "Norway",
     "lat": 62,
-    "lon": 10
+    "lon": 10,
+    "zoom": 12
   },
   {
     "code": "om",
     "name": "Oman",
     "lat": 21,
-    "lon": 57
+    "lon": 57,
+    "zoom": 12
   },
   {
     "code": "pk",
     "name": "Pakistan",
     "lat": 30,
-    "lon": 70
+    "lon": 70,
+    "zoom": 12
   },
   {
     "code": "pw",
     "name": "Palau",
     "lat": 7.5,
-    "lon": 134.62
+    "lon": 134.62,
+    "zoom": 14
   },
   {
     "code": "ps",
     "name": "Palestine",
     "lat": 31.9,
-    "lon": 35.2
+    "lon": 35.2,
+    "zoom": 13
   },
   {
     "code": "pa",
     "name": "Panama",
     "lat": 9,
-    "lon": -80
+    "lon": -80,
+    "zoom": 12
   },
   {
     "code": "pg",
     "name": "Papua New Guinea",
     "lat": -6,
-    "lon": 147
+    "lon": 147,
+    "zoom": 12
   },
   {
     "code": "py",
     "name": "Paraguay",
     "lat": -23,
-    "lon": -58
+    "lon": -58,
+    "zoom": 12
   },
   {
     "code": "pe",
     "name": "Peru",
     "lat": -10,
-    "lon": -76
+    "lon": -76,
+    "zoom": 12
   },
   {
     "code": "ph",
     "name": "Philippines",
     "lat": 13,
-    "lon": 122
+    "lon": 122,
+    "zoom": 12
   },
   {
     "code": "pn",
     "name": "Pitcairn Islands",
     "lat": -25.07,
-    "lon": -130.1
+    "lon": -130.1,
+    "zoom": 14
   },
   {
     "code": "pl",
     "name": "Poland",
     "lat": 52,
-    "lon": 20
+    "lon": 20,
+    "zoom": 12
   },
   {
     "code": "pt",
     "name": "Portugal",
     "lat": 39.5,
-    "lon": -8
+    "lon": -8,
+    "zoom": 12
   },
   {
     "code": "pr",
     "name": "Puerto Rico",
     "lat": 18.25,
-    "lon": -66.5
+    "lon": -66.5,
+    "zoom": 12
   },
   {
     "code": "qa",
     "name": "Qatar",
     "lat": 25.5,
-    "lon": 51.25
+    "lon": 51.25,
+    "zoom": 13
   },
   {
     "code": "re",
     "name": "Réunion",
     "lat": -20.88,
-    "lon": 55.45
+    "lon": 55.45,
+    "zoom": 12
   },
   {
     "code": "ro",
     "name": "Romania",
     "lat": 46,
-    "lon": 25
+    "lon": 25,
+    "zoom": 12
   },
   {
     "code": "ru",
     "name": "Russia",
     "lat": 60,
-    "lon": 100
+    "lon": 100,
+    "zoom": 12
   },
   {
     "code": "rw",
     "name": "Rwanda",
     "lat": -2,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   },
   {
     "code": "bl",
     "name": "Saint Barthélemy",
     "lat": 17.9,
-    "lon": -62.85
+    "lon": -62.85,
+    "zoom": 14
   },
   {
     "code": "sh",
     "name": "Saint Helena, Ascension and Tristan da Cunha",
     "lat": -15.92,
-    "lon": -5.72
+    "lon": -5.72,
+    "zoom": 14
   },
   {
     "code": "kn",
     "name": "Saint Kitts and Nevis",
     "lat": 17.3,
-    "lon": -62.73
+    "lon": -62.73,
+    "zoom": 14
   },
   {
     "code": "lc",
     "name": "Saint Lucia",
     "lat": 13.88333333,
-    "lon": -60.96666666
+    "lon": -60.96666666,
+    "zoom": 14
   },
   {
     "code": "mf",
     "name": "Saint Martin",
     "lat": 18.07,
-    "lon": -63.08
+    "lon": -63.08,
+    "zoom": 14
   },
   {
     "code": "pm",
     "name": "Saint Pierre and Miquelon",
     "lat": 46.78,
-    "lon": -56.17
+    "lon": -56.17,
+    "zoom": 14
   },
   {
     "code": "vc",
     "name": "Saint Vincent and the Grenadines",
     "lat": 13.25,
-    "lon": -61.2
+    "lon": -61.2,
+    "zoom": 14
   },
   {
     "code": "ws",
     "name": "Samoa",
     "lat": -13.83,
-    "lon": -171.76
+    "lon": -171.76,
+    "zoom": 14
   },
   {
     "code": "sm",
     "name": "San Marino",
     "lat": 43.76666666,
-    "lon": 12.41666666
+    "lon": 12.41666666,
+    "zoom": 14
   },
   {
     "code": "st",
     "name": "São Tomé and Príncipe",
     "lat": 0.34,
-    "lon": 6.73
+    "lon": 6.73,
+    "zoom": 14
   },
   {
     "code": "sa",
     "name": "Saudi Arabia",
     "lat": 25,
-    "lon": 45
+    "lon": 45,
+    "zoom": 12
   },
   {
     "code": "sn",
     "name": "Senegal",
     "lat": 14,
-    "lon": -14
+    "lon": -14,
+    "zoom": 12
   },
   {
     "code": "rs",
     "name": "Serbia",
     "lat": 44,
-    "lon": 21
+    "lon": 21,
+    "zoom": 12
   },
   {
     "code": "sc",
     "name": "Seychelles",
     "lat": -4.58333333,
-    "lon": 55.66666666
+    "lon": 55.66666666,
+    "zoom": 14
   },
   {
     "code": "sl",
     "name": "Sierra Leone",
     "lat": 8.5,
-    "lon": -11.5
+    "lon": -11.5,
+    "zoom": 12
   },
   {
     "code": "sg",
     "name": "Singapore",
     "lat": 1.36666666,
-    "lon": 103.8
+    "lon": 103.8,
+    "zoom": 14
   },
   {
     "code": "sx",
     "name": "Sint Maarten",
     "lat": 18.02,
-    "lon": -63.05
+    "lon": -63.05,
+    "zoom": 14
   },
   {
     "code": "sk",
     "name": "Slovakia",
     "lat": 48.66666666,
-    "lon": 19.5
+    "lon": 19.5,
+    "zoom": 12
   },
   {
     "code": "si",
     "name": "Slovenia",
     "lat": 46.11666666,
-    "lon": 14.81666666
+    "lon": 14.81666666,
+    "zoom": 12
   },
   {
     "code": "sb",
     "name": "Solomon Islands",
     "lat": -9.43,
-    "lon": 160.03
+    "lon": 160.03,
+    "zoom": 12
   },
   {
     "code": "so",
     "name": "Somalia",
     "lat": 10,
-    "lon": 49
+    "lon": 49,
+    "zoom": 12
   },
   {
     "code": "za",
     "name": "South Africa",
     "lat": -29,
-    "lon": 24
+    "lon": 24,
+    "zoom": 12
   },
   {
     "code": "gs",
     "name": "South Georgia",
     "lat": -54.28,
-    "lon": -36.51
+    "lon": -36.51,
+    "zoom": 12
   },
   {
     "code": "kr",
     "name": "South Korea",
     "lat": 37,
-    "lon": 127.5
+    "lon": 127.5,
+    "zoom": 12
   },
   {
     "code": "ss",
     "name": "South Sudan",
     "lat": 7,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   },
   {
     "code": "es",
     "name": "Spain",
     "lat": 40,
-    "lon": -4
+    "lon": -4,
+    "zoom": 12
   },
   {
     "code": "lk",
     "name": "Sri Lanka",
     "lat": 7,
-    "lon": 81
+    "lon": 81,
+    "zoom": 12
   },
   {
     "code": "sd",
     "name": "Sudan",
     "lat": 15,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   },
   {
     "code": "sr",
     "name": "Suriname",
     "lat": 4,
-    "lon": -56
+    "lon": -56,
+    "zoom": 12
   },
   {
     "code": "sj",
     "name": "Svalbard and Jan Mayen",
     "lat": 78.22,
-    "lon": 15.63
+    "lon": 15.63,
+    "zoom": 14
   },
   {
     "code": "se",
     "name": "Sweden",
     "lat": 62,
-    "lon": 15
+    "lon": 15,
+    "zoom": 12
   },
   {
     "code": "ch",
     "name": "Switzerland",
     "lat": 47,
-    "lon": 8
+    "lon": 8,
+    "zoom": 12
   },
   {
     "code": "sy",
     "name": "Syria",
     "lat": 35,
-    "lon": 38
+    "lon": 38,
+    "zoom": 12
   },
   {
     "code": "tw",
     "name": "Taiwan",
     "lat": 23.5,
-    "lon": 121
+    "lon": 121,
+    "zoom": 12
   },
   {
     "code": "tj",
     "name": "Tajikistan",
     "lat": 39,
-    "lon": 71
+    "lon": 71,
+    "zoom": 12
   },
   {
     "code": "tz",
     "name": "Tanzania",
     "lat": -6,
-    "lon": 35
+    "lon": 35,
+    "zoom": 12
   },
   {
     "code": "th",
     "name": "Thailand",
     "lat": 15,
-    "lon": 100
+    "lon": 100,
+    "zoom": 12
   },
   {
     "code": "tl",
     "name": "Timor-Leste",
     "lat": -8.83333333,
-    "lon": 125.91666666
+    "lon": 125.91666666,
+    "zoom": 13
   },
   {
     "code": "tg",
     "name": "Togo",
     "lat": 8,
-    "lon": 1.16666666
+    "lon": 1.16666666,
+    "zoom": 12
   },
   {
     "code": "tk",
     "name": "Tokelau",
     "lat": -9.17,
-    "lon": -171.85
+    "lon": -171.85,
+    "zoom": 14
   },
   {
     "code": "to",
     "name": "Tonga",
     "lat": -21.21,
-    "lon": -175.15
+    "lon": -175.15,
+    "zoom": 14
   },
   {
     "code": "tt",
     "name": "Trinidad and Tobago",
     "lat": 10.65,
-    "lon": -61.5
+    "lon": -61.5,
+    "zoom": 13
   },
   {
     "code": "tn",
     "name": "Tunisia",
     "lat": 34,
-    "lon": 9
+    "lon": 9,
+    "zoom": 12
   },
   {
     "code": "tr",
     "name": "Türkiye",
     "lat": 39,
-    "lon": 35
+    "lon": 35,
+    "zoom": 12
   },
   {
     "code": "tm",
     "name": "Turkmenistan",
     "lat": 40,
-    "lon": 60
+    "lon": 60,
+    "zoom": 12
   },
   {
     "code": "tc",
     "name": "Turks and Caicos Islands",
     "lat": 21.46,
-    "lon": -71.14
+    "lon": -71.14,
+    "zoom": 14
   },
   {
     "code": "tv",
     "name": "Tuvalu",
     "lat": -8.52,
-    "lon": 179.2
+    "lon": 179.2,
+    "zoom": 14
   },
   {
     "code": "ug",
     "name": "Uganda",
     "lat": 1,
-    "lon": 32
+    "lon": 32,
+    "zoom": 12
   },
   {
     "code": "ua",
     "name": "Ukraine",
     "lat": 49,
-    "lon": 32
+    "lon": 32,
+    "zoom": 12
   },
   {
     "code": "ae",
     "name": "United Arab Emirates",
     "lat": 24,
-    "lon": 54
+    "lon": 54,
+    "zoom": 12
   },
   {
     "code": "gb",
     "name": "United Kingdom",
     "lat": 54,
-    "lon": -2
+    "lon": -2,
+    "zoom": 12
   },
   {
     "code": "us",
     "name": "United States",
     "lat": 38,
-    "lon": -97
+    "lon": -97,
+    "zoom": 12
   },
   {
     "code": "um",
     "name": "United States Minor Outlying Islands",
     "lat": 19.28,
-    "lon": 166.65
+    "lon": 166.65,
+    "zoom": 14
   },
   {
     "code": "vi",
     "name": "United States Virgin Islands",
     "lat": 18.34,
-    "lon": -64.93
+    "lon": -64.93,
+    "zoom": 14
   },
   {
     "code": "uy",
     "name": "Uruguay",
     "lat": -33,
-    "lon": -56
+    "lon": -56,
+    "zoom": 12
   },
   {
     "code": "uz",
     "name": "Uzbekistan",
     "lat": 41,
-    "lon": 64
+    "lon": 64,
+    "zoom": 12
   },
   {
     "code": "vu",
     "name": "Vanuatu",
     "lat": -17.73,
-    "lon": 168.32
+    "lon": 168.32,
+    "zoom": 12
   },
   {
     "code": "va",
     "name": "Vatican City",
     "lat": 41.9,
-    "lon": 12.45
+    "lon": 12.45,
+    "zoom": 16
   },
   {
     "code": "ve",
     "name": "Venezuela",
     "lat": 8,
-    "lon": -66
+    "lon": -66,
+    "zoom": 12
   },
   {
     "code": "vn",
     "name": "Vietnam",
     "lat": 16.16666666,
-    "lon": 107.83333333
+    "lon": 107.83333333,
+    "zoom": 12
   },
   {
     "code": "wf",
     "name": "Wallis and Futuna",
     "lat": -13.28,
-    "lon": -176.18
+    "lon": -176.18,
+    "zoom": 14
   },
   {
     "code": "eh",
     "name": "Western Sahara",
     "lat": 24.5,
-    "lon": -13
+    "lon": -13,
+    "zoom": 12
   },
   {
     "code": "ye",
     "name": "Yemen",
     "lat": 15,
-    "lon": 48
+    "lon": 48,
+    "zoom": 12
   },
   {
     "code": "zm",
     "name": "Zambia",
     "lat": -15,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   },
   {
     "code": "zw",
     "name": "Zimbabwe",
     "lat": -20,
-    "lon": 30
+    "lon": 30,
+    "zoom": 12
   }
 ]

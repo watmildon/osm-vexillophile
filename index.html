@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flag Collector OSM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Flag Collector OSM</h1>
+    <p>Find missing countries from your <a href="https://hdyc.neis-one.org/" target="_blank" rel="noopener">HDYC</a> profile and start mapping!</p>
+  </header>
+
+  <main>
+    <section id="input-section">
+      <label for="hdyc-input">Paste your HDYC country/region data below:</label>
+      <textarea id="hdyc-input" placeholder="us United States - 3,354,284 (12,597)
+ro Romania - 39,938 (10)id Indonesia - 35,156 (168)
+..."></textarea>
+      <button id="parse-btn">Find Missing Flags</button>
+    </section>
+
+    <section id="results-section" class="hidden">
+      <div id="summary"></div>
+
+      <details id="collected-section">
+        <summary><h2>Collected <span id="collected-count"></span></h2></summary>
+        <div id="collected-list" class="country-grid"></div>
+      </details>
+
+      <details id="missing-section" open>
+        <summary><h2>Missing <span id="missing-count"></span></h2></summary>
+        <div id="missing-list" class="country-grid"></div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data sourced from <a href="https://github.com/mledoze/countries" target="_blank" rel="noopener">mledoze/countries</a>. Not affiliated with HDYC or OpenStreetMap Foundation.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

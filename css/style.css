@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #f8f9fa;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  color: #666;
+}
+
+header a {
+  color: #0366d6;
+}
+
+/* Input section */
+#input-section {
+  margin-bottom: 2rem;
+}
+
+#input-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#hdyc-input {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  resize: vertical;
+  margin-bottom: 0.75rem;
+}
+
+#hdyc-input:focus {
+  border-color: #0366d6;
+  outline: none;
+}
+
+#parse-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: #0366d6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#parse-btn:hover {
+  background: #0255b3;
+}
+
+/* Results */
+.hidden {
+  display: none;
+}
+
+#summary {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#summary .count-collected {
+  color: #28a745;
+  font-weight: 700;
+}
+
+#summary .count-missing {
+  color: #d73a49;
+  font-weight: 700;
+}
+
+/* Collapsible sections */
+details {
+  margin-bottom: 1.5rem;
+}
+
+details summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+details summary h2::before {
+  content: "▶";
+  font-size: 0.75rem;
+  transition: transform 0.2s;
+}
+
+details[open] summary h2::before {
+  transform: rotate(90deg);
+}
+
+details .country-grid {
+  margin-top: 0.75rem;
+}
+
+details summary h2 span {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+/* Country grid */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.country-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.country-card .flag {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.country-card .name {
+  flex: 1;
+  font-size: 0.9rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.country-card .editors {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.editor-link {
+  display: inline-block;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.editor-link.id {
+  background: #7ebc6f;
+}
+
+.editor-link.rapid {
+  background: #f0a030;
+}
+
+.editor-link.josm {
+  background: #6b8fc3;
+}
+
+.editor-link:hover {
+  opacity: 0.85;
+}
+
+/* Collected cards are simpler */
+#collected-list .country-card {
+  background: #e6f4ea;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #0366d6;
+}
+
+@media (max-width: 600px) {
+  .country-grid {
+    grid-template-columns: 1fr;
+  }
+}

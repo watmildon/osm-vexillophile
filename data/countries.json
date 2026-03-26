@@ -56,8 +56,8 @@
   {
     "code": "ag",
     "name": "Antigua and Barbuda",
-    "lat": 17.05,
-    "lon": -61.8
+    "lat": 17.12,
+    "lon": -61.85
   },
   {
     "code": "ar",
@@ -98,8 +98,8 @@
   {
     "code": "bs",
     "name": "Bahamas",
-    "lat": 24.25,
-    "lon": -76
+    "lat": 25.06,
+    "lon": -77.34
   },
   {
     "code": "bh",
@@ -242,8 +242,8 @@
   {
     "code": "cv",
     "name": "Cape Verde",
-    "lat": 16,
-    "lon": -24
+    "lat": 14.93,
+    "lon": -23.51
   },
   {
     "code": "bq",
@@ -302,8 +302,8 @@
   {
     "code": "km",
     "name": "Comoros",
-    "lat": -12.16666666,
-    "lon": 44.25
+    "lat": -11.7,
+    "lon": 43.26
   },
   {
     "code": "cg",
@@ -440,14 +440,14 @@
   {
     "code": "fo",
     "name": "Faroe Islands",
-    "lat": 62,
-    "lon": -7
+    "lat": 62.01,
+    "lon": -6.77
   },
   {
     "code": "fj",
     "name": "Fiji",
-    "lat": -18,
-    "lon": 175
+    "lat": -17.77,
+    "lon": 177.95
   },
   {
     "code": "fi",
@@ -470,8 +470,8 @@
   {
     "code": "pf",
     "name": "French Polynesia",
-    "lat": -15,
-    "lon": -140
+    "lat": -17.53,
+    "lon": -149.57
   },
   {
     "code": "tf",
@@ -620,8 +620,8 @@
   {
     "code": "id",
     "name": "Indonesia",
-    "lat": -5,
-    "lon": 120
+    "lat": -6.21,
+    "lon": 106.85
   },
   {
     "code": "ir",
@@ -800,14 +800,14 @@
   {
     "code": "my",
     "name": "Malaysia",
-    "lat": 2.5,
-    "lon": 112.5
+    "lat": 3.14,
+    "lon": 101.69
   },
   {
     "code": "mv",
     "name": "Maldives",
-    "lat": 3.25,
-    "lon": 73
+    "lat": 4.175,
+    "lon": 73.51
   },
   {
     "code": "ml",
@@ -938,8 +938,8 @@
   {
     "code": "nc",
     "name": "New Caledonia",
-    "lat": -21.5,
-    "lon": 165.5
+    "lat": -22.28,
+    "lon": 166.46
   },
   {
     "code": "nz",
@@ -1124,8 +1124,8 @@
   {
     "code": "kn",
     "name": "Saint Kitts and Nevis",
-    "lat": 17.33333333,
-    "lon": -62.75
+    "lat": 17.3,
+    "lon": -62.73
   },
   {
     "code": "lc",
@@ -1166,8 +1166,8 @@
   {
     "code": "st",
     "name": "São Tomé and Príncipe",
-    "lat": 1,
-    "lon": 7
+    "lat": 0.34,
+    "lon": 6.73
   },
   {
     "code": "sa",
@@ -1226,8 +1226,8 @@
   {
     "code": "sb",
     "name": "Solomon Islands",
-    "lat": -8,
-    "lon": 159
+    "lat": -9.43,
+    "lon": 160.03
   },
   {
     "code": "so",
@@ -1346,8 +1346,8 @@
   {
     "code": "tk",
     "name": "Tokelau",
-    "lat": -9.37,
-    "lon": -171.22
+    "lat": -9.17,
+    "lon": -171.85
   },
   {
     "code": "to",
@@ -1358,8 +1358,8 @@
   {
     "code": "tt",
     "name": "Trinidad and Tobago",
-    "lat": 11,
-    "lon": -61
+    "lat": 10.65,
+    "lon": -61.5
   },
   {
     "code": "tn",
@@ -1448,8 +1448,8 @@
   {
     "code": "vu",
     "name": "Vanuatu",
-    "lat": -16,
-    "lon": 167
+    "lat": -17.73,
+    "lon": 168.32
   },
   {
     "code": "va",

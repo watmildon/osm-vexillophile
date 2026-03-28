@@ -23,6 +23,23 @@
     };
   }
 
+  // Build task/QA tool URLs for a given region
+  function taskLinks(lat, lon, zoom, name) {
+    // Build a bounding box around the point, scaled to zoom level
+    const delta = 0.05 * Math.pow(2, 12 - zoom);
+    const west = (lon - delta).toFixed(4);
+    const south = (lat - delta).toFixed(4);
+    const east = (lon + delta).toFixed(4);
+    const north = (lat + delta).toFixed(4);
+    // MapRoulette needs %2C-encoded commas to avoid queryString array parsing
+    const bbox = `${west}%2C${south}%2C${east}%2C${north}`;
+    return {
+      maproulette: `https://maproulette.org/browse/challenges?challengeSearch=${bbox}`,
+      osmose: `https://osmose.openstreetmap.fr/en/map/#zoom=7&lat=${lat}&lon=${lon}`,
+      hottm: `https://tasks.hotosm.org/explore?country=${encodeURIComponent(name)}`,
+    };
+  }
+
   // Parse HDYC pasted text into a Set of lowercase ISO alpha-2 codes
   // Format: "us United States - 3,354,284 (12,597)"
   // Entries may be on the same line (no separator other than the next 2-letter code)
@@ -76,18 +93,26 @@
       )
       .join("");
 
-    // Missing list (flags + names + editor links)
+    // Missing list (flags + names + editor links + task links)
     missingList.innerHTML = missing
       .map((c) => {
         const links = editorLinks(c.lat, c.lon, c.zoom || 12, c.name);
+        const tasks = taskLinks(c.lat, c.lon, c.zoom || 12, c.name);
         return (
           `<div class="country-card">` +
           `<span class="flag">${codeToFlag(c.code)}</span>` +
           `<span class="name">${c.name}</span>` +
+          `<span class="link-group">` +
           `<span class="editors">` +
           `<a class="editor-link id" href="${links.id}" target="_blank" rel="noopener" title="Edit in iD">iD</a>` +
           `<a class="editor-link rapid" href="${links.rapid}" target="_blank" rel="noopener" title="Edit in Rapid">Rapid</a>` +
           `<a class="editor-link josm" href="#" data-josm="${links.josm}" title="Open in JOSM (remote control)">JOSM</a>` +
+          `</span>` +
+          `<span class="tasks">` +
+          `<a class="task-link task-link-mr" href="${tasks.maproulette}" target="_blank" rel="noopener" title="Find tasks on MapRoulette"><img src="icons/maproulette.svg" alt="MapRoulette" class="task-icon task-icon-dark"></a>` +
+          `<a class="task-link task-link-osmose" href="${tasks.osmose}" target="_blank" rel="noopener" title="Find QA issues on Osmose"><img src="icons/osmose.svg" alt="Osmose" class="task-icon"></a>` +
+          `<a class="task-link" href="${tasks.hottm}" target="_blank" rel="noopener" title="Find projects on HOT Tasking Manager"><img src="icons/hot.svg" alt="HOT Tasking Manager" class="task-icon task-icon-wide"></a>` +
+          `</span>` +
           `</span>` +
           `</div>`
         );

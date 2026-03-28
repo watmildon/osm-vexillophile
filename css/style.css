@@ -370,7 +370,6 @@ details summary h2 span {
 .country-card .editors {
   display: flex;
   gap: 0.35rem;
-  flex-shrink: 0;
 }
 
 .editor-link {
@@ -405,6 +404,94 @@ details summary h2 span {
 
 .editor-link.josm-err {
   background: #d73a49;
+}
+
+/* Task/QA tool links */
+.link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.tasks {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.task-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--border-light);
+}
+
+.task-link:hover {
+  color: var(--text-heading);
+  background: var(--btn-secondary-hover);
+}
+
+.task-link-mr {
+  background: #24464d;
+  border-color: #1b353b;
+}
+
+.task-link-mr:hover {
+  background: #1b353b;
+}
+
+.task-link-mr .task-icon-dark {
+  filter: invert(1);
+}
+
+.task-link-osmose {
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+}
+
+.task-link-osmose:hover {
+  background: none;
+  opacity: 0.8;
+}
+
+.task-link-osmose .task-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+
+.task-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.task-link:has(.task-icon-wide) {
+  width: 30px;
+}
+
+.task-icon-wide {
+  width: 22px;
+}
+
+body[data-theme="dark"] .task-icon-dark {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .task-icon-dark {
+    filter: invert(1);
+  }
 }
 
 /* Collected cards are simpler */

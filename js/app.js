@@ -36,7 +36,7 @@
     return {
       maproulette: `https://maproulette.org/browse/challenges?challengeSearch=${bbox}`,
       osmose: `https://osmose.openstreetmap.fr/en/map/#zoom=7&lat=${lat}&lon=${lon}`,
-      hottm: `https://tasks.hotosm.org/explore?country=${encodeURIComponent(name)}`,
+      hottm: `https://tasks.hotosm.org/explore?text=${encodeURIComponent(name)}`,
     };
   }
 

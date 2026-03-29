@@ -19,7 +19,7 @@
       josm:
         `http://localhost:8111/load_and_zoom?left=${lon - delta}` +
         `&right=${lon + delta}&top=${lat + delta}&bottom=${lat - delta}` +
-        `&new_layer=true&layer_name=${encodeURIComponent(name)}&download_policy=never`,
+        `&new_layer=true&layer_name=${encodeURIComponent(name)}`,
     };
   }
 

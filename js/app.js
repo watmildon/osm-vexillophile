@@ -172,7 +172,7 @@
   // Init
   async function init() {
     const response = await fetch("data/countries.json");
-    allRegions = await response.json();
+    allRegions = (await response.json()).filter((r) => !r.skip);
 
     const textarea = document.getElementById("hdyc-input");
 

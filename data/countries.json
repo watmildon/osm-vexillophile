@@ -11,7 +11,8 @@
     "name": "Åland Islands",
     "lat": 60.116667,
     "lon": 19.9,
-    "zoom": 14
+    "zoom": 14,
+    "skip": true
   },
   {
     "code": "al",
@@ -891,8 +892,8 @@
   {
     "code": "li",
     "name": "Liechtenstein",
-    "lat": 47.26666666,
-    "lon": 9.53333333,
+    "lat": 47.1459702,
+    "lon": 9.513725,
     "zoom": 14
   },
   {

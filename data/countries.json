@@ -117,7 +117,8 @@
     "name": "Bahamas",
     "lat": 25.06,
     "lon": -77.34,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "The Bahamas"
   },
   {
     "code": "bh",
@@ -362,7 +363,8 @@
     "name": "Congo",
     "lat": -1,
     "lon": 15,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Republic of the Congo"
   },
   {
     "code": "ck",
@@ -411,7 +413,8 @@
     "name": "Czechia",
     "lat": 49.75,
     "lon": 15.5,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Czech Republic"
   },
   {
     "code": "dk",
@@ -446,7 +449,8 @@
     "name": "DR Congo",
     "lat": 0,
     "lon": 25,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Congo-Kinshasa"
   },
   {
     "code": "ec",
@@ -495,7 +499,8 @@
     "name": "Eswatini",
     "lat": -26.5,
     "lon": 31.5,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Swaziland"
   },
   {
     "code": "et",
@@ -509,7 +514,8 @@
     "name": "Falkland Islands",
     "lat": -51.7,
     "lon": -57.85,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Falkland Islands (Islas Malvinas)"
   },
   {
     "code": "fo",
@@ -540,6 +546,20 @@
     "zoom": 12
   },
   {
+    "code": "fr",
+    "name": "Juan De Nova Island",
+    "lat": -17.0556,
+    "lon": 42.725,
+    "zoom": 14
+  },
+  {
+    "code": "fr",
+    "name": "Glorioso Islands",
+    "lat": -11.5833,
+    "lon": 47.3333,
+    "zoom": 14
+  },
+  {
     "code": "gf",
     "name": "French Guiana",
     "lat": 4,
@@ -558,7 +578,8 @@
     "name": "French Southern and Antarctic Lands",
     "lat": -49.35,
     "lon": 70.22,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "French Southern & Antarctic Lands"
   },
   {
     "code": "ga",
@@ -572,7 +593,8 @@
     "name": "Gambia",
     "lat": 13.46666666,
     "lon": -16.56666666,
-    "zoom": 13
+    "zoom": 13,
+    "hdycName": "The Gambia"
   },
   {
     "code": "ge",
@@ -831,7 +853,8 @@
     "name": "Kosovo",
     "lat": 42.666667,
     "lon": 21.166667,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Republic of Kosovo"
   },
   {
     "code": "kw",
@@ -1006,7 +1029,8 @@
     "name": "Micronesia",
     "lat": 6.91,
     "lon": 158.16,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Federated States of Micronesia"
   },
   {
     "code": "md",
@@ -1062,7 +1086,8 @@
     "name": "Myanmar",
     "lat": 22,
     "lon": 98,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Myanmar (Burma)"
   },
   {
     "code": "na",
@@ -1153,7 +1178,8 @@
     "name": "North Macedonia",
     "lat": 41.83333333,
     "lon": 22,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Macedonia"
   },
   {
     "code": "mp",
@@ -1188,14 +1214,16 @@
     "name": "Palau",
     "lat": 7.5,
     "lon": 134.62,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "Pacific Islands (Palau)"
   },
   {
     "code": "ps",
     "name": "Palestine",
     "lat": 31.9,
     "lon": 35.2,
-    "zoom": 13
+    "zoom": 13,
+    "hdycName": "West Bank"
   },
   {
     "code": "pa",
@@ -1272,7 +1300,8 @@
     "name": "Réunion",
     "lat": -20.88,
     "lon": 55.45,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Reunion"
   },
   {
     "code": "ro",
@@ -1307,42 +1336,48 @@
     "name": "Saint Helena, Ascension and Tristan da Cunha",
     "lat": -15.92,
     "lon": -5.72,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "St. Helena"
   },
   {
     "code": "kn",
     "name": "Saint Kitts and Nevis",
     "lat": 17.3,
     "lon": -62.73,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "St. Kitts and Nevis"
   },
   {
     "code": "lc",
     "name": "Saint Lucia",
     "lat": 13.88333333,
     "lon": -60.96666666,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "St. Lucia"
   },
   {
     "code": "mf",
     "name": "Saint Martin",
     "lat": 18.07,
     "lon": -63.08,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "Collectivity of Saint Martin"
   },
   {
     "code": "pm",
     "name": "Saint Pierre and Miquelon",
     "lat": 46.78,
     "lon": -56.17,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "St. Pierre and Miquelon"
   },
   {
     "code": "vc",
     "name": "Saint Vincent and the Grenadines",
     "lat": 13.158214928019964,
     "lon": -61.22498070871531,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "St. Vincent and the Grenadines"
   },
   {
     "code": "ws",
@@ -1363,7 +1398,8 @@
     "name": "São Tomé and Príncipe",
     "lat": 0.34,
     "lon": 6.73,
-    "zoom": 14
+    "zoom": 14,
+    "hdycName": "Sao Tome and Principe"
   },
   {
     "code": "sa",
@@ -1454,7 +1490,8 @@
     "name": "South Georgia",
     "lat": -54.28,
     "lon": -36.51,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "South Georgia and the South Sandwich Islands"
   },
   {
     "code": "kr",
@@ -1503,6 +1540,21 @@
     "name": "Svalbard and Jan Mayen",
     "lat": 78.22,
     "lon": 15.63,
+    "zoom": 14,
+    "skip": true
+  },
+  {
+    "code": "sj",
+    "name": "Svalbard",
+    "lat": 78.22,
+    "lon": 15.63,
+    "zoom": 14
+  },
+  {
+    "code": "sj",
+    "name": "Jan Mayen",
+    "lat": 70.9821,
+    "lon": -8.5320,
     "zoom": 14
   },
   {
@@ -1545,7 +1597,8 @@
     "name": "Tanzania",
     "lat": -6,
     "lon": 35,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "United Republic of Tanzania"
   },
   {
     "code": "th",
@@ -1559,7 +1612,8 @@
     "name": "Timor-Leste",
     "lat": -8.83333333,
     "lon": 125.91666666,
-    "zoom": 13
+    "zoom": 13,
+    "hdycName": "East Timor"
   },
   {
     "code": "tg",
@@ -1601,7 +1655,8 @@
     "name": "Türkiye",
     "lat": 39,
     "lon": 35,
-    "zoom": 12
+    "zoom": 12,
+    "hdycName": "Turkey"
   },
   {
     "code": "tm",
@@ -1664,6 +1719,49 @@
     "name": "United States Minor Outlying Islands",
     "lat": 19.28,
     "lon": 166.65,
+    "zoom": 14,
+    "skip": true
+  },
+  {
+    "code": "um",
+    "name": "Wake Island",
+    "lat": 19.28,
+    "lon": 166.65,
+    "zoom": 14
+  },
+  {
+    "code": "um",
+    "name": "Baker Island",
+    "lat": 0.1936,
+    "lon": -176.4769,
+    "zoom": 14
+  },
+  {
+    "code": "um",
+    "name": "Howland Island",
+    "lat": 0.8073,
+    "lon": -176.6188,
+    "zoom": 14
+  },
+  {
+    "code": "um",
+    "name": "Jarvis Island",
+    "lat": -0.3742,
+    "lon": -160.014,
+    "zoom": 14
+  },
+  {
+    "code": "um",
+    "name": "Johnston Atoll",
+    "lat": 16.7295,
+    "lon": -169.5337,
+    "zoom": 14
+  },
+  {
+    "code": "um",
+    "name": "Midway Islands",
+    "lat": 28.2072,
+    "lon": -177.3735,
     "zoom": 14
   },
   {
@@ -1749,5 +1847,27 @@
     "lat": -20,
     "lon": 30,
     "zoom": 12
+  },
+  {
+    "name": "Gaza Strip",
+    "lat": 31.5,
+    "lon": 34.45,
+    "zoom": 12,
+    "matchByNameOnly": true,
+    "flagCode": "ps"
+  },
+  {
+    "name": "Paracel Islands",
+    "lat": 16.5,
+    "lon": 112.0,
+    "zoom": 12,
+    "matchByNameOnly": true
+  },
+  {
+    "name": "Spratly Islands",
+    "lat": 9.0,
+    "lon": 113.0,
+    "zoom": 12,
+    "matchByNameOnly": true
   }
 ]

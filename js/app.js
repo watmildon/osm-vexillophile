@@ -3,8 +3,11 @@
 
   let allRegions = [];
 
-  // Return an <img> tag for the bundled flag SVG
+  // Return an <img> tag for the bundled flag SVG, or the favicon if no code.
   function codeToFlag(code) {
+    if (!code) {
+      return `<img src="favicon.svg" alt="?" class="flag-img flag-img-fallback">`;
+    }
     return `<img src="flags/${code.toLowerCase()}.svg" alt="${code.toUpperCase()}" class="flag-img">`;
   }
 
@@ -40,33 +43,87 @@
     };
   }
 
-  // Parse HDYC pasted text into a Set of lowercase ISO alpha-2 codes
+  // Parse HDYC pasted text into a list of {code, name} entries.
   // Format: "us United States - 3,354,284 (12,597)"
-  // Entries may be on the same line (no separator other than the next 2-letter code)
+  // Entries may be on the same line with no separator before the next 2-letter code.
+  // Some regions share a code with their parent country (e.g. "fr Juan De Nova Island"),
+  // so we need both code and name to identify a region.
   function parseHdyc(text) {
-    const codes = new Set();
-    // Match 2-letter codes that appear before a region name.
-    // The HDYC format is: <2-letter code> <Region Name> - <number> (<number>)
-    const regex = /\b([a-z]{2})\s+[A-ZÀ-Ž][a-zà-ž]/g;
+    const entries = [];
+    // <code> <Name> - <number>
+    // Name runs from after the code until " - " followed by a digit.
+    // Names can contain hyphens (Guinea-Bissau, Timor-Leste), so we look for
+    // " - " (space-hyphen-space) followed by a digit as the end marker.
+    const regex = /\b([a-z]{2})\s+([A-ZÀ-Ž].*?)\s+-\s+[\d,]/g;
     let match;
     while ((match = regex.exec(text)) !== null) {
-      codes.add(match[1].toLowerCase());
+      entries.push({
+        code: match[1].toLowerCase(),
+        name: match[2].trim(),
+      });
     }
-    return codes;
+    return entries;
+  }
+
+  // Stable identifier for a region — composite of code + HDYC name (or display name).
+  // Multiple regions can share an ISO code (e.g. "fr" → France, Juan De Nova Island).
+  // Regions with `matchByNameOnly` have no known code and are keyed by name alone.
+  function regionKey(region) {
+    const name = (region.hdycName || region.name).toLowerCase();
+    return region.matchByNameOnly ? `\u0001${name}` : `${region.code}\u0001${name}`;
+  }
+
+  // Determine which region keys are collected, given parsed HDYC entries.
+  function matchCollected(entries) {
+    // Build lookups for code-keyed regions and name-only regions.
+    const byCode = new Map();
+    const byNameOnly = new Map();
+    for (const region of allRegions) {
+      if (region.matchByNameOnly) {
+        byNameOnly.set((region.hdycName || region.name).toLowerCase(), region);
+      } else {
+        if (!byCode.has(region.code)) byCode.set(region.code, []);
+        byCode.get(region.code).push(region);
+      }
+    }
+
+    const collected = new Set();
+    for (const entry of entries) {
+      const lowerName = entry.name.toLowerCase();
+      // Try code+name match first.
+      const candidates = byCode.get(entry.code);
+      if (candidates) {
+        const matched = candidates.find(
+          (r) => (r.hdycName || r.name).toLowerCase() === lowerName
+        );
+        if (matched) {
+          collected.add(regionKey(matched));
+          continue;
+        }
+      }
+      // Fall back to name-only match for regions without a known code.
+      const nameMatch = byNameOnly.get(lowerName);
+      if (nameMatch) {
+        collected.add(regionKey(nameMatch));
+      }
+    }
+    return collected;
   }
 
   // Render results
-  function render(collectedCodes) {
+  function render(entries) {
     const resultsSection = document.getElementById("results-section");
     const summary = document.getElementById("summary");
     const collectedList = document.getElementById("collected-list");
     const missingList = document.getElementById("missing-list");
 
+    const collectedKeys = matchCollected(entries);
+
     const collected = [];
     const missing = [];
 
     for (const region of allRegions) {
-      if (collectedCodes.has(region.code)) {
+      if (collectedKeys.has(regionKey(region))) {
         collected.push(region);
       } else {
         missing.push(region);
@@ -87,7 +144,7 @@
       .map(
         (c) =>
           `<div class="country-card">` +
-          `<span class="flag">${codeToFlag(c.code)}</span>` +
+          `<span class="flag">${codeToFlag(c.flagCode || c.code)}</span>` +
           `<span class="name">${c.name}</span>` +
           `</div>`
       )
@@ -100,7 +157,7 @@
         const tasks = taskLinks(c.lat, c.lon, c.zoom || 12, c.name);
         return (
           `<div class="country-card">` +
-          `<span class="flag">${codeToFlag(c.code)}</span>` +
+          `<span class="flag">${codeToFlag(c.flagCode || c.code)}</span>` +
           `<span class="name">${c.name}</span>` +
           `<span class="link-group">` +
           `<span class="editors">` +
@@ -160,10 +217,10 @@
   const STORAGE_KEY = "flagcollector-hdyc-data";
 
   function saveAndRender(text) {
-    const codes = parseHdyc(text);
-    if (codes.size === 0) return;
+    const entries = parseHdyc(text);
+    if (entries.length === 0) return;
     localStorage.setItem(STORAGE_KEY, text);
-    render(codes);
+    render(entries);
     // Collapse input section and show clear button
     document.getElementById("input-section").removeAttribute("open");
     document.getElementById("clear-btn").classList.remove("hidden");

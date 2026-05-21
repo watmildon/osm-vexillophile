@@ -1868,6 +1868,7 @@
     "lat": 9.0,
     "lon": 113.0,
     "zoom": 12,
-    "matchByNameOnly": true
+    "matchByNameOnly": true,
+    "skip": true
   }
 ]

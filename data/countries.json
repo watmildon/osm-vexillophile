@@ -1870,5 +1870,11 @@
     "zoom": 12,
     "matchByNameOnly": true,
     "skip": true
+  },
+  {
+    "name": "Mystery Bucket",
+    "hdycName": "unknown",
+    "matchByNameOnly": true,
+    "flagCode": "unknown"
   }
 ]

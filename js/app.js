@@ -48,18 +48,19 @@
   // Entries may be on the same line with no separator before the next 2-letter code.
   // Some regions share a code with their parent country (e.g. "fr Juan De Nova Island"),
   // so we need both code and name to identify a region.
+  // HDYC also lists changesets it can't place in any country as "??? unknown".
   function parseHdyc(text) {
     const entries = [];
-    // <code> <Name> - <number>
+    // <code> <Name> - <number>, or ??? unknown - <number>
     // Name runs from after the code until " - " followed by a digit.
     // Names can contain hyphens (Guinea-Bissau, Timor-Leste), so we look for
     // " - " (space-hyphen-space) followed by a digit as the end marker.
-    const regex = /\b([a-z]{2})\s+([A-ZÀ-Ž].*?)\s+-\s+[\d,]/g;
+    const regex = /(?:\b([a-z]{2})\s+([A-ZÀ-Ž].*?)|\?\?\?\s+(unknown))\s+-\s+[\d,]/g;
     let match;
     while ((match = regex.exec(text)) !== null) {
       entries.push({
-        code: match[1].toLowerCase(),
-        name: match[2].trim(),
+        code: match[1] ? match[1].toLowerCase() : "??",
+        name: (match[2] || match[3]).trim(),
       });
     }
     return entries;
@@ -153,6 +154,15 @@
     // Missing list (flags + names + editor links + task links)
     missingList.innerHTML = missing
       .map((c) => {
+        // Regions with no location (e.g. HDYC's "unknown" bucket) get no links.
+        if (c.lat == null || c.lon == null) {
+          return (
+            `<div class="country-card">` +
+            `<span class="flag">${codeToFlag(c.flagCode || c.code)}</span>` +
+            `<span class="name">${c.name}</span>` +
+            `</div>`
+          );
+        }
         const links = editorLinks(c.lat, c.lon, c.zoom || 12, c.name);
         const tasks = taskLinks(c.lat, c.lon, c.zoom || 12, c.name);
         return (
